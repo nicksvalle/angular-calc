@@ -1,8 +1,17 @@
 <form>
   <input type="number" name="num1" [(ngModel)]="num1">
   <input type="number" name="num2" [(ngModel)]="num2">
-  <button type="button" (click)="calc()">
+  <button type="button" (click)="calcSoma()">
     Somar
+  </button>
+  <button type="button" (click)="calcSubtrair()">
+    Subtrair
+  </button>
+  <button type="button" (click)="calcMultiplicar()">
+    Multiplicar
+  </button>
+  <button type="button" (click)="calcDividir()">
+    Dividir
   </button>
   <input name="result" [(ngModel)]="result" disabled>
 </form>

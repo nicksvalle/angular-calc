@@ -6,13 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./calc.component.css']
 })
 export class CalcComponent {
-  num1 : number = 20;
-  num2 : number = 10;
+  num1 : number = 0;
+  num2 : number = 0;
   result : number = 0;
 
-  calc(){
+  calcSoma(){
     this.result = this.num1 + this.num2;
-    
+  }
+
+  calcSubtrair(){
+    this.result = this.num1 - this.num2;
+  }
+
+  calcMultiplicar(){
+    this.result = this.num1 * this.num2;
+  }
+
+  calcDividir(){
+    this.result = this.num1 / this.num2;
   }
 
 }
