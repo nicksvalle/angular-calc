@@ -1,6 +1,9 @@
+<div class="flex-container">
 <form>
   <input type="number" name="num1" [(ngModel)]="num1">
+  <br>
   <input type="number" name="num2" [(ngModel)]="num2">
+  <br><br>
   <button type="button" (click)="calcSoma()">
     Somar
   </button>
@@ -13,5 +16,7 @@
   <button type="button" (click)="calcDividir()">
     Dividir
   </button>
+  <br><br>
   <input name="result" [(ngModel)]="result" disabled>
 </form>
+</div>
